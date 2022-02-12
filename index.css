@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    width: 100vw;
+    height: 100vh;
+    font-size: 10px;
+    background: linear-gradient(to right bottom, red, aqua);
+}
+.container
+{
+    position: relative;
+    width: 60rem;
+    height: 90vh;
+    background-color: transparent;
+    margin: auto;
+}
+/**animation items**/
+.top
+{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, red, aqua);
+    animation: animatetop 4s linear 1s infinite;
+    bottom: 35rem;
+    left: 8rem;
+}
+.raketka
+{
+    position: absolute;
+    width: 10rem;
+    height: 20rem;
+    animation: animateraket 2s linear infinite 0s;
+}
+.raketka-1
+{
+    bottom: 5rem;
+    left: 5rem;
+    background: red;
+}
+.raketka-2
+{
+    bottom: 5rem;
+    right: 5rem;
+    background: aqua;
+    animation-delay: 2s;
+}
+/**animtion**/
+@keyframes animateraket
+{
+    0%
+    {
+        width: 10rem;
+        height: 20rem;
+    }
+    50%
+    {
+        width: 10rem;
+        height: 30rem;
+    }
+    100%
+    {
+        width: 10rem;
+        height: 20rem;
+    }
+}
+@keyframes animatetop
+{
+    0%
+    {
+        bottom: 35rem;
+        left: 8rem;
+    }
+    25%
+    {
+        bottom: 50rem;
+        left: 30rem;
+    }
+    50%
+    {
+        bottom: 35rem;
+        left: 48rem;
+    }
+    75%
+    {
+        bottom: 50rem;
+        left: 30rem;
+    }
+    100%
+    {
+        bottom: 35rem;
+        left: 8rem;
+    }
+}
