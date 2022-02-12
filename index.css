@@ -97,3 +97,16 @@ html
         left: 8rem;
     }
 }
+.top h1
+{
+    opacity: 0%;
+}
+.top:hover h1
+{
+    opacity: 100;
+    display: block;
+    font-size: 2rem;
+    font-size: 2rem;
+    color: red;
+    transition: 10s;
+}
